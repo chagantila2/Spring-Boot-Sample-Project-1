@@ -34,6 +34,12 @@ pipeline {
 //             }
         }
         
+        stage('shell script') {
+            steps {
+                echo 'build succeeded'
+            }
+        }
+        
         stage('docker package') {
             steps {
                 sh 'docker build -t dockerjava .'

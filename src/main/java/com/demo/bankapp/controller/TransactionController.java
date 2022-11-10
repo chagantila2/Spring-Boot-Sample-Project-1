@@ -62,6 +62,7 @@ public class TransactionController {
 
 		CreateTransactionResponse response = new CreateTransactionResponse();
 		response.setTransaction(transaction);
+		System.out.println("Response:" +response);
 		return response;
 	}
 

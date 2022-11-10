@@ -1,5 +1,6 @@
 FROM openjdk:8-jdk-alpine as build
 WORKDIR /workspace/app
+MAINTAINER chagantila2
 
 COPY mvnw .
 COPY .mvn .mvn
